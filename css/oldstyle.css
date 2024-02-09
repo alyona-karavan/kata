@@ -1,0 +1,16 @@
+@charset "UTF-8";
+#selected {
+  margin: 0px 0px 4px 16px;
+  background-color: #ffffff;
+  border: #b8ffec solid 2px;
+  border-radius: 6px;
+}
+
+/* пофиксить чтобы первая кнопка была  выделена по умолчанию но не всегда */
+#selected {
+  margin: 0px 3px 4px 24px;
+}
+
+#selected {
+  margin: 0;
+}/*# sourceMappingURL=oldstyle.css.map */

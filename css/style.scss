@@ -8,11 +8,11 @@ body {
 }
 .wrapper {
   margin: 0 auto;
-  width: 320px;
+  min-width: 320px;
   position: relative;
 
   @media (min-width: 768px) {
-    width: 768px;
+    min-width: 768px;
   }
   @media (min-width: 1120px) {
     width: 1120px;
@@ -26,6 +26,12 @@ body {
     align-items: center;
     margin-top: 15px;
   }
+  .smoother-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
   &-top {
     min-height: 88px;
     min-width: 320px;
@@ -66,7 +72,7 @@ body {
         border-radius: 1px;
     }
     &__logo {
-      margin: 1px 0px 0 5px;
+      margin: 1px 0px 0 15px;
       @media (min-width: 1120px) {
         display: none;
       }
@@ -100,7 +106,7 @@ body {
     &__divider {
       height: 32px;
       width: 2px;
-      margin: 4px 0px 4px 6px;
+      margin: 4px 2px 4px 0px;
       background-color: #eaeaea;
       border-radius: 1px;
       @media (min-width: 768px) {

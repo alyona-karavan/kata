@@ -86,12 +86,12 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  width: 320px;
+  min-width: 320px;
   position: relative;
 }
 @media (min-width: 768px) {
   .wrapper {
-    width: 768px;
+    min-width: 768px;
   }
 }
 @media (min-width: 1120px) {
@@ -107,6 +107,11 @@ body {
     align-items: center;
     margin-top: 15px;
   }
+}
+.header .smoother-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .header-top {
   min-height: 88px;
@@ -159,7 +164,7 @@ body {
   }
 }
 .header-top__logo {
-  margin: 1px 0px 0 5px;
+  margin: 1px 0px 0 15px;
 }
 @media (min-width: 1120px) {
   .header-top__logo {
@@ -203,7 +208,7 @@ body {
 .header-top__divider {
   height: 32px;
   width: 2px;
-  margin: 4px 0px 4px 6px;
+  margin: 4px 2px 4px 0px;
   background-color: #eaeaea;
   border-radius: 1px;
 }

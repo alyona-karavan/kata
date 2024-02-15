@@ -14,7 +14,7 @@ body {
     justify-content: space-between;
     box-shadow: 30px 0 40px 0  #DDDEE6;
 }
-header {
+.top {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,18 +23,21 @@ header {
 .top-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 154px;
 }
-.burger {
-    margin-top: 5px;
-}
+a{
+    display: inline-block;
 }
 
-ul {
+}
+
+
+.button-list {
     display: flex;
     flex-direction:column;
 }
-.button-list {
+.button {
     font-family: "TT Lakes Medium";
     font-size: 16px;
     letter-spacing: -0.2px;
@@ -67,7 +70,7 @@ footer {
         width: 152px;
         display: flex;
         justify-content: space-between;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
 }
 
@@ -102,4 +105,55 @@ footer {
     }
 }
 
+.burger,
+.search,
+.logo,
+.language-button {
+    &:hover {
+        transition: 0.5s;
+        transform: scale(1.1);
+        transition-timing-function: ease-in-out;
+}
+}
+.button,
+.mail,
+.tel {
+    &:hover{
+        // transition: 0.5s;
+        // transition-timing-function: ease-out;
+        // color: #C33762;
+        text-decoration: underline;
+    }
+}
+
+.call,
+.chat,
+.profile {
+    line-height: 0;
+    &:hover{
+        // transition: 2s;
+        // // transform: rotate(360deg);
+        // transition-timing-function: ease-in-out;
+        animation-name: move;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+
+    }
+}
+
+@keyframes  move {
+    25% {
+        transform: rotate(20deg); 
+    }
+    50% {
+        transform: rotate(-20deg); 
+    }
+    75% {
+        transform: rotate(-20deg); 
+    }
+    100% {
+        transform: rotate(0deg); 
+    }
+}
 

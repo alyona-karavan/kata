@@ -334,7 +334,7 @@ body {
     letter-spacing: -0.2px;
     margin: 14px 15px 15px 32px;
     &::before {
-      content: url('img/expand.svg');
+      content: url("img/expand.svg");
       position: absolute;
       left: 16px;
       @media (min-width: 768px) {

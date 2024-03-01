@@ -77,8 +77,8 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
-/*--------------------*/ 
-body {
+/*--------------------*/
+.slider {
   font-family: "TT Lakes Medium";
   font-size: 16px;
   letter-spacing: -0.2px;
@@ -89,6 +89,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 30px 0 40px 0 #DDDEE6;
+  position: fixed;
 }
 
 .top {
@@ -134,12 +135,12 @@ body {
   background-color: #41F6D7;
 }
 
-footer {
+.slider-footer {
   display: flex;
   flex-direction: column;
   margin: auto 0 32px 24px;
 }
-footer .footer-icons {
+.slider-footer .footer-icons {
   width: 152px;
   display: flex;
   justify-content: space-between;

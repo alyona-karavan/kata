@@ -62,7 +62,7 @@ const swiper = new Swiper('.swiper', {
   logosButton.addEventListener('click', function(evt) {
     evt.preventDefault();
 
-    arrow.src = "../img/logo/ic/expand-1.png";
+    arrow.src = "img/logo/ic/expand-1.png";
     for (let i of logosCloseToo) {
     i.style.display = 'block';
 };
@@ -79,7 +79,7 @@ if (xxl.matches) {
         logosButton.addEventListener('click', function(evt) {
             evt.preventDefault();
         
-            arrow.src = "../img/logo/ic/expand.png";
+            arrow.src = "img/logo/ic/expand.png";
 
             if (xxl.matches) {
                 for (let l of logosClose) {

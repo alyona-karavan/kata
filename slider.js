@@ -1,6 +1,3 @@
-
-
-
 let burger = document.querySelector('.header-top__burger');
 let slider = document.querySelector('.slider');
 let wrapper = document.querySelector('.wrapper');
@@ -9,6 +6,7 @@ let overlay = document.querySelector('.overlay-tablet');
 let xl = window.matchMedia( "(max-width: 1439px)" );
 let l = window.matchMedia( "(min-width: 768px)" && "(max-width: 1439px)" );
 let xxl = window.matchMedia( "(min-width: 1440px)" );
+let m = window.matchMedia( "(max-width: 767px)" );
 
 if (xl.matches) {
     
@@ -22,19 +20,23 @@ burger.addEventListener('click', function(evt) {
     evt.stopPropagation();
 
     slider.style.display = 'block';
+
+    
         }
 
 })
 
 document.addEventListener('click', function(evt) {
     if (!slider.contains(evt.target)) {
-        slider.style.display = 'none';
+       
+        // slider.style.animationName = 'move-close-tablet';
         overlay.style.display = 'none';
+        slider.style.display = 'none';
     }
 })
 };
 
-
+if (m.matches) {
 const swiper = new Swiper('.swiper', {
     // // Optional parameters
    
@@ -45,10 +47,8 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-pagination',
       clickable: true,
     },
-
-  
-    
-  });
+  })
+};
 
 
   let logosButton = document.querySelector('.logos-open');
